@@ -1,1 +1,63 @@
 /* Place CSS styles here */
+body {
+    background-color: #900404;
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px #000;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    line-height: 1.5;
+}
+
+a {
+
+}
+
+a:hover {
+
+}
+
+a:focus {
+
+}
+
+img {
+
+}
+
+.tt-row {
+    display: flex;
+}
+
+.top-background-image {
+    background-image: url(../img/giz2.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-background-image-with-content {
+    background-image: url(../img/giz2.jpg);
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.top-background-image-with-content h2 {
+    text-align: center;
+}
