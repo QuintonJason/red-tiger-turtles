@@ -61,3 +61,28 @@ img {
 .top-background-image-with-content h2 {
     text-align: center;
 }
+
+.submit-button {
+    padding: 8px;
+    border-radius: 12px;
+    border: none;
+    background: black;
+    color: white;
+    border: 1px solid black;
+}
+
+.submit-button:hover {
+    background-color: transparent;
+}
+
+.submit-button:focus-visible {
+    outline-color: red;
+}
+
+.area {
+    display: none;
+}
+
+.area.on {
+    display: block;
+}
