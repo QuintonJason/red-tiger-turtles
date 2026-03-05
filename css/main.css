@@ -179,3 +179,72 @@ img {
     padding-left: 6px;
     padding-right: 6px;
 }
+
+main {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.star {
+    width: 50px;
+}
+
+.star-1 {
+    position: absolute;
+    top: 60px;
+    left: 50px;
+}
+
+
+.star-2 {
+    position: absolute;
+    top: 70px;
+    left: 100px;
+}
+
+.star-3 {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+}
+
+.star-4 {
+    position: fixed;
+    top: 70px;
+    left: 90%;
+}
+
+/* .star-5 {
+    position: fixed;
+    top: 70px;
+    left: 200px;
+} */
+
+.night {
+    background-color: #000;
+}
+
+.ba-fish-1 {
+    position: absolute;
+    top: 33%;
+    left: 16%;
+    width: 225px;
+}
+
+.bl-fish-1 {
+    position: absolute;
+    bottom: 20%;
+    right: 17%;
+    width: 200px;
+}
+
+.ba-fish-2 {
+    position: absolute;
+    width: 200px;
+    top: 50%;
+    left: 48%;
+}
+
+.tank {
+    position: relative;
+}
