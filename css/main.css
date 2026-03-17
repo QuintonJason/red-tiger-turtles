@@ -229,6 +229,7 @@ main {
     top: 33%;
     left: 16%;
     width: 225px;
+    transition: all .5s ease;
 }
 
 .bl-fish-1 {
@@ -247,4 +248,107 @@ main {
 
 .tank {
     position: relative;
+}
+
+/* STATES */
+/* Bob */
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+  50% {
+    -webkit-transform: translateY(-9px);
+    transform: translateY(-9px);
+  }
+  100% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: translateY(-18px);
+    transform: translateY(-18px);
+  }
+}
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-bob {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+@keyframes horizontal-hvr-bob {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+  50% {
+    -webkit-transform: translateX(-9px);
+    transform: translateX(-9px);
+  }
+  100% {
+    -webkit-transform: translateX(-18px);
+    transform: translateX(-18px);
+  }
+}
+@keyframes horizontal-hvr-bob-float {
+  100% {
+    -webkit-transform: translateX(-18px);
+    transform: translateX(-18px);
+  }
+}
+.swim {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.swim {
+  -webkit-animation-name: horizontal-hvr-bob-float, horizontal-hvr-bob;
+  animation-name: horizontal-hvr-bob-float, horizontal-hvr-bob;
+  -webkit-animation-duration: .3s, 1.5s;
+  animation-duration: .3s, 1.5s;
+  -webkit-animation-delay: 0s, .3s;
+  animation-delay: 0s, .3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+
+.pink {
+    background-color: #ffc0cb;
+}
+
+.flipped {
+    transform: rotateY(540deg);
+}
+
+.invert-colors {
+    filter: invert();
 }
